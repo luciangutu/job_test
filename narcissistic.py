@@ -1,5 +1,5 @@
 def narcissistic( value ):
-    mylist = list(str(value))
+    mylist = str(value)
     r = 0
     c = 0
     for i in mylist:
