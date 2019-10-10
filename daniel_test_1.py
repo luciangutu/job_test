@@ -17,4 +17,5 @@ def _process_var_input(_items, _batch):
 
     return result
 
+
 print(_process_var_input(items, batch))
