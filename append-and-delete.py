@@ -33,8 +33,10 @@ def appendAndDelete(s, t, k):
             continue
         else:
             break
-
-    # check if the sum of the remaining chars are equal to k or k is even number
+    # check if the sum of the remaining chars is less than the number of remaining operations
+    if (len(s) - counter) + (len(t) - counter) > k:
+        return "No"
+    # check if the sum of the remaining chars is equal to k or k is even number
     # if (len(s)-counter) + (len(t)-counter) == k:
     if ((len(s) - counter) + (len(t) - counter) - k) % 2 == 0:
         return "Yes"
@@ -71,5 +73,12 @@ print(result)
 s = 'a'
 t = 'abc'
 k = 4
+result = appendAndDelete(s, t, k)
+print(result)
+
+
+s = 'qwerty'
+t = 'qwerui'
+k = 2
 result = appendAndDelete(s, t, k)
 print(result)
