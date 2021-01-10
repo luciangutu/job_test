@@ -2,8 +2,8 @@
 script to calculate how many years it will take to reach a better salary
 s1 - current (lower) salary
 s2 - future/wanted/promissed salary
-i1 - yearly salary increase for the current salary
-i2 - yearly salary increase at the other company that you are thinking of going
+i1 - yearly salary increase for the current salary (%)
+i2 - yearly salary increase at the other company that you are thinking of going (%)
 """
 
 s1 = 500
